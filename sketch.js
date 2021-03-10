@@ -21,8 +21,7 @@ function setup() {
 	//Create the Bodies Here.
 	ground = new Ground(600, height-10, 1200, 10 );
 	
-	hammer = new Hammer(100,100, 100, 40);
-
+	
 	stone = new Stone(100, 500, 60, 60);
 
 	rubber = new Rubber(1000, 500, 40);
@@ -40,6 +39,7 @@ function setup() {
 
 	iron = new Iron(1000,500, 70,60);
 	
+        hammer = new Hammer(100,100, 100, 40);
 
 
 	Engine.run(engine);
@@ -52,7 +52,6 @@ function draw() {
   background("lightblue");
   
   ground.display();
-  hammer.display();
   stone.display();
   rubber.display();
   
@@ -67,6 +66,7 @@ function draw() {
   sand9.display();
   sand10.display();
   iron.display();
+  hammer.display();
 
   drawSprites();
  
